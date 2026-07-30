@@ -1,0 +1,28 @@
+/* Style blogger theme — editorial, high-contrast */
+
+:root {
+  --color-cream: #f8f6f3;
+  --color-cream-dark: #e5e0d8;
+  --color-accent: #1a1a1a;
+  --color-text: #1a1a1a;
+  --color-text-muted: #767676;
+  --color-footer: #1a1a1a;
+  --font-heading: "Lora", Georgia, serif;
+}
+
+.post-card-body {
+  border-bottom-color: var(--color-black);
+}
+
+.post-card-cats a {
+  color: var(--color-text-muted);
+  border-bottom-color: var(--color-text-muted);
+}
+
+.featured-cats a {
+  color: var(--color-cream);
+}
+
+.read-more {
+  border-color: var(--color-black);
+}

@@ -1,0 +1,26 @@
+{% if recipe %}
+<div class="recipe-card">
+  <h2>{{ recipe.title or "Recipe" }}</h2>
+  <div class="recipe-meta">
+    {% if recipe.prepTime %}<span>Prep: {{ recipe.prepTime }}</span>{% endif %}
+    {% if recipe.cookTime %}<span>Cook: {{ recipe.cookTime }}</span>{% endif %}
+    {% if recipe.servings %}<span>Serves: {{ recipe.servings }}</span>{% endif %}
+  </div>
+  {% if recipe.ingredients %}
+  <h3>Ingredients</h3>
+  <ul>
+    {% for item in recipe.ingredients %}
+    <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  {% if recipe.instructions %}
+  <h3>Instructions</h3>
+  <ol>
+    {% for step in recipe.instructions %}
+    <li>{{ step }}</li>
+    {% endfor %}
+  </ol>
+  {% endif %}
+</div>
+{% endif %}

@@ -1,0 +1,35 @@
+---
+layout: layouts/base.njk
+bodyClass: home
+---
+<div class="container">
+  {% if collections.featuredPosts.length > 0 %}
+  <section class="featured-area" aria-label="Featured posts">
+    {% set featured = collections.featuredPosts | head(1) %}
+    {% for post in featured %}
+    <article class="featured-slide" style="background-image: url('{{ post.data.image or '/assets/images/placeholder.jpg' }}')">
+      <div class="featured-overlay">
+        <div class="featured-cats">
+          {% for cat in post.data.categories %}
+          <a href="/categories/{{ cat | slugify }}/">{{ cat }}</a>
+          {% endfor %}
+        </div>
+        <h2 class="featured-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+        <a href="{{ post.url }}" class="featured-more">Read More</a>
+      </div>
+    </article>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  <div id="main-layout" class="has-sidebar">
+    <section aria-label="Latest posts">
+      <div class="post-grid">
+        {% for post in collections.posts %}
+        {% include "partials/post-card.njk" %}
+        {% endfor %}
+      </div>
+    </section>
+    {% include "partials/sidebar.njk" %}
+  </div>
+</div>

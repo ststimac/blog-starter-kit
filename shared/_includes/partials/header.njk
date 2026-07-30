@@ -1,0 +1,14 @@
+<header id="header">
+  <div class="container">
+    <div class="site-logo">
+      {% if site.logo %}
+      <a href="/"><img src="{{ site.logo }}" alt="{{ site.title }}"></a>
+      {% else %}
+      <a href="/" class="site-logo-text">{{ site.title }}</a>
+      {% endif %}
+    </div>
+    {% if site.tagline %}
+    <p class="site-tagline">{{ site.tagline }}</p>
+    {% endif %}
+  </div>
+</header>

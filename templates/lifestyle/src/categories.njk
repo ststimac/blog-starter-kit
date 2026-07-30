@@ -1,0 +1,22 @@
+---
+pagination:
+  data: collections.categories
+  size: 1
+  alias: category
+permalink: "/categories/{{ category.key }}/"
+layout: layouts/base.njk
+bodyClass: archive
+eleventyComputed:
+  title: "{{ category.key | capitalize }}"
+---
+<div class="container">
+  <header class="archive-header">
+    <h1>{{ category.key | capitalize }}</h1>
+    <p>{{ category.posts.length }} post{% if category.posts.length != 1 %}s{% endif %}</p>
+  </header>
+  <div class="post-grid">
+    {% for post in category.posts %}
+    {% include "partials/post-card.njk" %}
+    {% endfor %}
+  </div>
+</div>

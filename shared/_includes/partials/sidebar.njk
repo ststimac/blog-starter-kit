@@ -1,0 +1,25 @@
+<aside id="sidebar" aria-label="Sidebar">
+  {% if site.author %}
+  <div class="sidebar-widget about-widget">
+    <h2 class="widget-title">About</h2>
+    {% if site.author.image %}
+    <img src="{{ site.author.image }}" alt="{{ site.author.name }}">
+    {% endif %}
+    <p>{{ site.author.bio }}</p>
+    <p><a href="/about/">Read more →</a></p>
+  </div>
+  {% endif %}
+
+  {% if site.newsletter %}
+  <div class="sidebar-widget newsletter-widget">
+    <h2 class="widget-title">{{ site.newsletter.title or "Subscribe" }}</h2>
+    <p>{{ site.newsletter.description }}</p>
+    <form name="newsletter" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="newsletter">
+      <label for="email" class="sr-only">Email address</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+  {% endif %}
+</aside>

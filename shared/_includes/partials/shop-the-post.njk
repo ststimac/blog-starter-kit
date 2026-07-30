@@ -1,0 +1,13 @@
+{% if shopItems %}
+<section class="shop-the-post" aria-label="Shop this post">
+  <h2>Shop the Post</h2>
+  <div class="shop-grid">
+    {% for item in shopItems %}
+    <a href="{{ item.url }}" class="shop-item" target="_blank" rel="noopener sponsored">
+      <img src="{{ item.image }}" alt="{{ item.name }}" loading="lazy">
+      <span>{{ item.name }}</span>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

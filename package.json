@@ -1,0 +1,25 @@
+{
+  "name": "blog-starter-kit",
+  "version": "1.0.0",
+  "description": "Netlify + Eleventy blog templates for lifestyle, food, and style bloggers",
+  "private": true,
+  "scripts": {
+    "dev:lifestyle": "npm run dev --workspace=templates/lifestyle",
+    "dev:food": "npm run dev --workspace=templates/food-blogger",
+    "dev:style": "npm run dev --workspace=templates/style-blogger",
+    "build:lifestyle": "npm run build --workspace=templates/lifestyle",
+    "build:food": "npm run build --workspace=templates/food-blogger",
+    "build:style": "npm run build --workspace=templates/style-blogger",
+    "build:all": "npm run build:lifestyle && npm run build:food && npm run build:style"
+  },
+  "workspaces": [
+    "shared",
+    "templates/lifestyle",
+    "templates/food-blogger",
+    "templates/style-blogger"
+  ],
+  "overrides": {
+    "minimatch": "10.2.6",
+    "brace-expansion": "5.0.8"
+  }
+}

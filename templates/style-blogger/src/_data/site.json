@@ -1,0 +1,33 @@
+{
+  "title": "Daily Edit",
+  "description": "Outfit inspiration, fashion finds, and personal style.",
+  "tagline": "Style & Outfit Inspiration",
+  "url": "https://example.com",
+  "author": {
+    "name": "Your Name",
+    "bio": "Fashion enthusiast sharing daily outfits, seasonal edits, and shoppable style inspiration.",
+    "image": "/assets/images/author.jpg"
+  },
+  "navigation": [
+    { "label": "Home", "url": "/" },
+    { "label": "Outfits", "url": "/categories/outfits/" },
+    { "label": "Shopping", "url": "/categories/shopping/" },
+    { "label": "About", "url": "/about/" }
+  ],
+  "social": [
+    { "label": "Instagram", "url": "https://instagram.com/" },
+    { "label": "Pinterest", "url": "https://pinterest.com/" },
+    { "label": "LTK", "url": "https://shopltk.com/" }
+  ],
+  "affiliateDisclosure": "This site uses affiliate links. I may earn a commission when you shop through my links at no extra cost to you.",
+  "footerWidgets": [
+    {
+      "title": "Shop My Favorites",
+      "content": "<p><a href=\"#\">Amazon Storefront</a><br><a href=\"#\">LTK Shop</a></p>"
+    },
+    {
+      "title": "Categories",
+      "content": "<p><a href=\"/categories/outfits/\">Outfits</a><br><a href=\"/categories/shopping/\">Shopping</a></p>"
+    }
+  ]
+}

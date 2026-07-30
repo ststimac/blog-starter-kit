@@ -1,0 +1,35 @@
+{
+  "title": "Harvest & Hearth",
+  "description": "Seasonal recipes, kitchen stories, and food from the garden.",
+  "tagline": "Recipes & Kitchen Stories",
+  "url": "https://example.com",
+  "author": {
+    "name": "Your Name",
+    "bio": "Home cook, gardener, and lover of seasonal ingredients. I believe good food starts with what's fresh and local.",
+    "image": "/assets/images/author.jpg"
+  },
+  "navigation": [
+    { "label": "Home", "url": "/" },
+    { "label": "Recipes", "url": "/categories/recipes/" },
+    { "label": "Seasonal", "url": "/categories/seasonal/" },
+    { "label": "About", "url": "/about/" }
+  ],
+  "social": [
+    { "label": "Instagram", "url": "https://instagram.com/" },
+    { "label": "Pinterest", "url": "https://pinterest.com/" }
+  ],
+  "newsletter": {
+    "title": "Recipe Club",
+    "description": "New recipes every week, straight to your inbox."
+  },
+  "footerWidgets": [
+    {
+      "title": "About",
+      "content": "<p>Seasonal recipes and stories from my kitchen and garden.</p>"
+    },
+    {
+      "title": "Browse",
+      "content": "<p><a href=\"/categories/recipes/\">Recipes</a><br><a href=\"/categories/seasonal/\">Seasonal</a></p>"
+    }
+  ]
+}

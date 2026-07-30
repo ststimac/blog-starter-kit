@@ -1,0 +1,18 @@
+/* Food blogger theme — warm earth tones */
+
+:root {
+  --color-cream: #f5f0e8;
+  --color-cream-dark: #e8ddd0;
+  --color-accent: #8b5a2b;
+  --color-text: #3d3229;
+  --color-footer: #2c241c;
+  --font-heading: "Lora", Georgia, serif;
+}
+
+.post-card-body {
+  border-bottom-color: var(--color-cream-dark);
+}
+
+.recipe-card {
+  border-left-color: var(--color-accent);
+}

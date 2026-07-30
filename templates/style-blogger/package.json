@@ -1,0 +1,13 @@
+{
+  "name": "@blog-starter-kit/style-blogger",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "eleventy --serve --watch",
+    "build": "eleventy"
+  },
+  "dependencies": {
+    "@blog-starter-kit/shared": "*"
+  }
+}

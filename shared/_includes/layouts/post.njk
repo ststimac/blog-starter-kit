@@ -1,0 +1,41 @@
+---
+layout: layouts/base.njk
+bodyClass: single-post
+---
+<div class="container">
+  <article>
+    <header class="post-header">
+      <div class="post-meta">
+        <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+        {% if categories %}
+        · {% for cat in categories %}<a href="/categories/{{ cat | slugify }}/">{{ cat }}</a>{% if not loop.last %}, {% endif %}{% endfor %}
+        {% endif %}
+      </div>
+      <h1>{{ title }}</h1>
+    </header>
+
+    {% if image %}
+    <figure class="post-featured-image">
+      <img src="{{ image }}" alt="{{ imageAlt or title }}" loading="lazy">
+    </figure>
+    {% endif %}
+
+    <div class="post-content">
+      {{ content | safe }}
+    </div>
+
+    {% if recipe %}
+    {% include "partials/recipe-card.njk" %}
+    {% endif %}
+
+    {% if shopItems %}
+    {% include "partials/shop-the-post.njk" %}
+    {% endif %}
+
+    {% if site.affiliateDisclosure %}
+    <aside class="affiliate-disclosure">
+      {{ site.affiliateDisclosure }}
+    </aside>
+    {% endif %}
+  </article>
+</div>

@@ -1,0 +1,17 @@
+{% if site.footerWidgets %}
+<section id="footer-widgets">
+  {% for widget in site.footerWidgets %}
+  <div class="footer-widget">
+    <h2>{{ widget.title }}</h2>
+    <div>{{ widget.content | safe }}</div>
+  </div>
+  {% endfor %}
+</section>
+{% endif %}
+
+<footer id="footer">
+  <p>&copy; {{ meta.buildTime | readableDate }} {{ site.title }}. All rights reserved.</p>
+  {% if site.affiliateDisclosure %}
+  <p class="footer-disclosure">{{ site.affiliateDisclosure }}</p>
+  {% endif %}
+</footer>

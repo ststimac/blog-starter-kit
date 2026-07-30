@@ -1,0 +1,39 @@
+{
+  "title": "Wander & Warmth",
+  "description": "A lifestyle blog about travel, style, home, and seasonal living.",
+  "tagline": "Travel & Lifestyle Blog",
+  "url": "https://example.com",
+  "logo": "",
+  "author": {
+    "name": "Alex",
+    "bio": "Writer, traveler, and homebody. Sharing stories about the places I go and the life I build at home.",
+    "image": "/assets/images/author.jpg"
+  },
+  "navigation": [
+    { "label": "Home", "url": "/" },
+    { "label": "Lifestyle", "url": "/categories/lifestyle/" },
+    { "label": "Style", "url": "/categories/style/" },
+    { "label": "Travel", "url": "/categories/travel/" },
+    { "label": "About", "url": "/about/" }
+  ],
+  "social": [
+    { "label": "Instagram", "url": "https://instagram.com/" },
+    { "label": "Pinterest", "url": "https://pinterest.com/" },
+    { "label": "Twitter", "url": "https://twitter.com/" }
+  ],
+  "newsletter": {
+    "title": "Subscribe",
+    "description": "Get new posts delivered to your inbox."
+  },
+  "affiliateDisclosure": "This site participates in affiliate programs. If you click a link and make a purchase, I may earn a commission at no extra cost to you.",
+  "footerWidgets": [
+    {
+      "title": "About the Blog",
+      "content": "<p>A lifestyle blog about travel, style, and making home feel cozy.</p>"
+    },
+    {
+      "title": "Categories",
+      "content": "<p><a href=\"/categories/style/\">Style</a><br><a href=\"/categories/travel/\">Travel</a><br><a href=\"/categories/lifestyle/\">Lifestyle</a></p>"
+    }
+  ]
+}
