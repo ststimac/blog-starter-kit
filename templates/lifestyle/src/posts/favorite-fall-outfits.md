@@ -1,37 +1,23 @@
 ---
 layout: layouts/post.njk
-title: "5 of My Favorite Fall Outfits"
-description: "It's the season of cozy and warm tones. My favorite season to get dressed for!"
-date: 2023-10-01
+title: "Your Style Post Title"
+description: "Replace this with a short description for your homepage and RSS feed."
+date: 2024-01-02
 categories:
   - style
 tags:
   - style
-  - fall
-  - outfits
 image: https://images.unsplash.com/photo-1496747611176-843222e1ee57?w=1200&h=800&fit=crop
-imageAlt: Fall fashion outfit inspiration
-permalink: /posts/favorite-fall-outfits/
+imageAlt: Placeholder style image from Unsplash
+permalink: /posts/your-style-post/
 ---
 
-It's the season of cozy and warm tones. My favorite season to get dressed for!
+Replace this text with your style story, roundup, or recommendation.
 
-## 1. The Layered Look
+## Your First Look
 
-A cashmere turtleneck under a wool blazer — polished enough for dinner, cozy enough for a walk.
+Describe your outfit, favorite pieces, or styling advice here.
 
-## 2. Boots & Skirts
+## Your Second Look
 
-Ankle boots with a midi skirt is my go-to transitional outfit. Add tights when it gets colder.
-
-## 3. The Cutout Sweater Dress
-
-I love getting dressed in autumn. The season inspires me every year and I can't wait to get out my boots and sweaters.
-
-## 4. Neutral Base, Pop of Color
-
-Start with beige or camel and add one bold accessory — a scarf, bag, or lip color.
-
-## 5. The Classic Trench
-
-Every fall wardrobe needs a good trench coat. Mine is vintage and perfectly broken in.
+Add more details, links, and images as needed.

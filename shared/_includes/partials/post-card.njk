@@ -1,8 +1,9 @@
 <article class="post-card">
-  {% if post.data.image %}
+  {% set postImage = post.data.image or images.defaultPost %}
+  {% if postImage %}
   <div class="post-card-image">
     <a href="{{ post.url }}">
-      <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt or post.data.title }}" loading="lazy">
+      <img src="{{ postImage }}" alt="{{ post.data.imageAlt or post.data.title }}" loading="lazy">
     </a>
   </div>
   {% endif %}

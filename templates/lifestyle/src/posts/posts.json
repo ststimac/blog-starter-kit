@@ -1,0 +1,6 @@
+{
+  "tags": "posts",
+  "eleventyComputed": {
+    "image": "{{ image or images.defaultPost }}"
+  }
+}

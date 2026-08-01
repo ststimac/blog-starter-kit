@@ -11,7 +11,7 @@ export default function (eleventyConfig) {
       input: "src",
       output: "_site",
       includes: "../../../shared/_includes",
-      data: "src/_data",
+      data: "_data",
     },
   });
 

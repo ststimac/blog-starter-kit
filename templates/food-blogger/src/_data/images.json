@@ -1,0 +1,9 @@
+{
+  "defaultPost": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200&h=800&fit=crop",
+  "placeholders": {
+    "recipes": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=1200&h=800&fit=crop",
+    "baking": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1200&h=800&fit=crop",
+    "salad": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=1200&h=800&fit=crop",
+    "seasonal": "https://images.unsplash.com/photo-1466692476860-aef128dfb788?w=1200&h=800&fit=crop"
+  }
+}

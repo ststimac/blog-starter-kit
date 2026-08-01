@@ -19,13 +19,20 @@ export default function createEleventyConfig(options = {}) {
     eleventyConfig.addPlugin(pluginSyntaxHighlight);
 
     eleventyConfig.addGlobalData("meta", {
-      buildTime: () => new Date(),
+      buildTime: new Date(),
     });
 
     eleventyConfig.addFilter("readableDate", (dateObj) => {
+      if (!dateObj || !(dateObj instanceof Date) || isNaN(dateObj.getTime())) {
+        return "";
+      }
       return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
         "LLLL d, yyyy"
       );
+    });
+
+    eleventyConfig.addFilter("currentYear", () => {
+      return new Date().getFullYear();
     });
 
     eleventyConfig.addFilter("htmlDateString", (dateObj) => {
@@ -38,6 +45,11 @@ export default function createEleventyConfig(options = {}) {
       if (!Array.isArray(array) || array.length === 0) return [];
       if (n < 0) return array.slice(n);
       return array.slice(0, n);
+    });
+
+    eleventyConfig.addFilter("excludeUrl", (collection, url) => {
+      if (!Array.isArray(collection)) return [];
+      return collection.filter((item) => item.url !== url);
     });
 
     eleventyConfig.addFilter("min", (...numbers) => {

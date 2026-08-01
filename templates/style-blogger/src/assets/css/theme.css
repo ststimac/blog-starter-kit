@@ -1,28 +1,45 @@
-/* Style blogger theme — editorial, high-contrast */
+/*
+  Style blogger theme colors.
+  Change these values to customize this template.
+  Anything not listed here inherits from shared/assets/css/base.css.
+*/
 
 :root {
-  --color-cream: #f8f6f3;
-  --color-cream-dark: #e5e0d8;
-  --color-accent: #1a1a1a;
-  --color-text: #1a1a1a;
-  --color-text-muted: #767676;
-  --color-footer: #1a1a1a;
-  --font-heading: "Lora", Georgia, serif;
+  /* Main brand color — links, buttons, category labels */
+  --main-color: #1a1a1a;
+
+  /* Soft background — top nav, footer band, widgets */
+  --soft-background: #f8f6f3;
+
+  /* Soft border — dividers and subtle borders */
+  --soft-border-color: #e5e0d8;
+
+  /* Text color — body copy and headings */
+  --text-color: #1a1a1a;
+
+  /* Light text — dates, captions, less important details */
+  --light-text-color: #767676;
+
+  /* Footer bar — dark bottom bar */
+  --footer-bar-color: #1a1a1a;
+
+  /* Heading font — post titles and section headings */
+  --heading-font: "Lora", Georgia, serif;
 }
 
 .post-card-body {
-  border-bottom-color: var(--color-black);
+  border-bottom-color: var(--strong-color);
 }
 
 .post-card-cats a {
-  color: var(--color-text-muted);
-  border-bottom-color: var(--color-text-muted);
+  color: var(--light-text-color);
+  border-bottom-color: var(--light-text-color);
 }
 
 .featured-cats a {
-  color: var(--color-cream);
+  color: var(--soft-background);
 }
 
 .read-more {
-  border-color: var(--color-black);
+  border-color: var(--strong-color);
 }

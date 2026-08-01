@@ -32,10 +32,12 @@ From the repo root:
 
 ```bash
 npm install
-npm run dev:lifestyle   # or dev:food / dev:style
+npm run dev:lifestyle   # http://localhost:8080
+npm run dev:food        # http://localhost:8081
+npm run dev:style       # http://localhost:8082
 ```
 
-Open [http://localhost:8080](http://localhost:8080) to preview.
+Open the URL for the template you’re previewing.
 
 To build for production:
 
@@ -72,7 +74,7 @@ Each template has a theme file you can edit:
 templates/lifestyle/src/assets/css/theme.css
 ```
 
-This overrides CSS variables like `--color-cream`, `--color-accent`, and `--color-text`. The lifestyle template uses the same warm cream and gold palette as The Hermes Homestead.
+This overrides CSS variables like `--main-color`, `--soft-background`, `--text-color`, and font sizes such as `--body-font-size` and `--menu-font-size`. Each variable has a comment explaining where it’s used.
 
 ### Logo
 

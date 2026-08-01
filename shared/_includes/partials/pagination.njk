@@ -1,0 +1,25 @@
+<nav class="pagination" aria-label="Post pages">
+  {% if pagination.href.previous %}
+  <a class="pagination-link pagination-prev" href="{{ pagination.href.previous }}">← Newer</a>
+  {% else %}
+  <span class="pagination-link pagination-prev is-disabled">← Newer</span>
+  {% endif %}
+
+  <ol class="pagination-pages">
+    {% for pageEntry in pagination.pages %}
+    <li>
+      {% if page.url == pagination.hrefs[loop.index0] %}
+      <span class="pagination-page is-current" aria-current="page">{{ loop.index }}</span>
+      {% else %}
+      <a class="pagination-page" href="{{ pagination.hrefs[loop.index0] }}">{{ loop.index }}</a>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ol>
+
+  {% if pagination.href.next %}
+  <a class="pagination-link pagination-next" href="{{ pagination.href.next }}">Older →</a>
+  {% else %}
+  <span class="pagination-link pagination-next is-disabled">Older →</span>
+  {% endif %}
+</nav>

@@ -1,9 +1,420 @@
-/* Lifestyle theme — inspired by The Hermes Homestead */
+/*
+  Lifestyle theme colors and spacing.
+  Change these values to customize this template.
+  Anything not listed here inherits from shared/assets/css/base.css.
+*/
 
 :root {
-  --color-cream: #faf2df;
-  --color-cream-dark: #f4dabe;
-  --color-accent: #bc822b;
-  --color-text: #3f3f3f;
-  --color-footer: #3a3a3a;
+  /* Main brand color — links, buttons, category labels */
+  --main-color: #bc822b;
+
+  /* Soft background — top nav, footer band, logo circle */
+  --soft-background: #faf2df;
+
+  /* Soft border — dividers and subtle borders */
+  --soft-border-color: #f4dabe;
+
+  /* Text color — body copy and headings */
+  --text-color: #3f3f3f;
+
+  /* Footer bar — dark bottom bar */
+  --footer-bar-color: #3a3a3a;
+
+  /* Content width — how wide the homepage and posts can get */
+  --content-width: 75rem;
+
+  /* Logo area spacing — space above/below the logo */
+  --logo-area-spacing: 1.25rem;
+
+  /* Post grid gap — space between homepage posts */
+  --post-grid-gap: 1.25rem;
+
+  /* Optional: override shared font sizes here if you want this template larger/smaller */
+  --body-font-size: 1.125rem;
+  --menu-font-size: 0.875rem;
+  --label-font-size: 0.75rem;
+  --card-title-font-size: clamp(1.25rem, 2.2vw, 1.85rem);
+  --featured-title-font-size: clamp(1.5rem, 3vw, 2.5rem);
+  --post-title-font-size: clamp(1.85rem, 3.5vw, 2.75rem);
+  --logo-font-size: 0.875rem;
+}
+
+/* Homepage editorial layout */
+
+
+.home .top-bar-inner {
+  justify-content: flex-start;
+  padding: 1rem 0;
+}
+
+.home .top-social {
+  display: none;
+}
+
+.home #header {
+  padding: 1rem 0 1.5rem;
+}
+
+.home .site-logo {
+  display: grid;
+  place-items: center;
+}
+
+.home .site-logo-text,
+.home .site-logo img {
+  display: grid;
+  place-items: center;
+  width: 5.25rem;
+  height: 5.25rem;
+  padding: 0.65rem;
+  border-radius: 50%;
+  background: var(--soft-background);
+  color: var(--text-color);
+  font-family: var(--heading-font);
+  font-size: var(--logo-font-size);
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0;
+  object-fit: cover;
+}
+
+.home .site-tagline {
+  display: none;
+}
+
+.home .featured-area {
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+
+.home .featured-slide {
+  min-height: 0;
+  aspect-ratio: 16 / 7;
+}
+
+.home .featured-overlay {
+  padding: 1.25rem;
+}
+
+.home .featured-title {
+  font-size: var(--featured-title-font-size);
+}
+
+.home .featured-more {
+  padding: 0.5rem 1rem;
+  font-size: var(--label-font-size);
+}
+
+.home-shop-preview {
+  max-width: 67.5rem;
+  margin: 0 auto 2.5rem;
+}
+
+.home-shop-heading {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.home-shop-heading span {
+  height: 0.0625rem;
+  background: var(--soft-border-color);
+}
+
+.home-shop-heading h2 {
+  margin: 0;
+  font-family: var(--menu-font);
+  font-size: var(--menu-font-size);
+  font-weight: 700;
+  letter-spacing: 0.125em;
+  text-transform: uppercase;
+}
+
+.home-shop-items {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.home-shop-item {
+  display: block;
+  width: 4.25rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.home-shop-item img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.home .promo-area {
+  max-width: 67.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home #main-layout {
+  display: block;
+  max-width: 67.5rem;
+  width: 100%;
+  margin: 0 auto 3.5rem;
+}
+
+.home #main-layout > section {
+  width: 100%;
+}
+
+.home .post-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 100%;
+  gap: 2rem 1.25rem;
+}
+
+.home .post-card-image img {
+  aspect-ratio: 3 / 4;
+}
+
+.home .post-card-body {
+  max-width: calc(100% - 1rem);
+  padding: 1.25rem 1rem 0.75rem;
+  top: -1.6rem;
+  border-bottom-width: 0.125rem;
+}
+
+.home .post-card-cats a,
+.home .post-card-date {
+  font-size: var(--label-font-size);
+  letter-spacing: 0.0625em;
+}
+
+.home .post-card-title {
+  font-size: var(--card-title-font-size);
+  margin: 0.5rem 0;
+}
+
+.home .post-card-excerpt {
+  font-size: var(--small-font-size);
+  line-height: 1.55;
+  margin: 0.5rem 0;
+}
+
+.home .read-more {
+  margin-top: 0.5rem;
+  padding: 0.45rem 0.85rem;
+  border-right-width: 0.125rem;
+  border-bottom-width: 0.125rem;
+  font-size: var(--label-font-size);
+}
+
+@media (max-width: 47.99em) {
+  .home .top-bar-inner {
+    align-items: flex-start;
+  }
+
+  .home .site-nav a {
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+  }
+
+  .home .site-logo-text {
+    display: none;
+  }
+
+  .home #header {
+    padding: 0;
+  }
+
+  .home #header:has(img) {
+    padding: 1rem 0 1.5rem;
+  }
+
+  .home .featured-slide {
+    aspect-ratio: 16 / 8;
+  }
+
+  .home .featured-overlay {
+    padding: 0.8rem;
+  }
+
+  .home .featured-cats,
+  .home .featured-more {
+    display: none;
+  }
+
+  .home .featured-title {
+    font-size: 1.15rem;
+    margin: 0;
+  }
+
+  .home-shop-preview {
+    margin-bottom: 1.75rem;
+  }
+
+  .home-shop-heading h2 {
+    font-size: var(--label-font-size);
+  }
+
+  .home-shop-items {
+    gap: 0.4rem;
+  }
+
+  .home-shop-item {
+    width: 2.4rem;
+  }
+
+  .home .promo-area {
+    gap: 1rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .home .post-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem 0.75rem;
+  }
+
+  .home .post-card-excerpt,
+  .home .read-more {
+    display: none;
+  }
+}
+
+/* Single post page — matches homepage width and editorial feel */
+.single-post #top-bar {
+  border-top: 0.3125rem solid var(--soft-background);
+}
+
+.single-post .top-bar-inner {
+  justify-content: flex-start;
+  padding: 0.4rem 0;
+}
+
+.single-post .top-social {
+  display: none;
+}
+
+.single-post #header {
+  padding: 1rem 0 1.5rem;
+}
+
+.single-post .site-logo {
+  display: grid;
+  place-items: center;
+}
+
+.single-post .site-logo-text,
+.single-post .site-logo img {
+  display: grid;
+  place-items: center;
+  width: 5.25rem;
+  height: 5.25rem;
+  padding: 0.65rem;
+  border-radius: 50%;
+  background: var(--soft-background);
+  color: var(--text-color);
+  font-family: var(--heading-font);
+  font-size: var(--logo-font-size);
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0;
+  object-fit: cover;
+}
+
+.single-post .site-tagline {
+  display: none;
+}
+
+.single-post .post-article {
+  max-width: 67.5rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.single-post .post-header {
+  margin-bottom: 1.75rem;
+}
+
+.single-post .post-header h1 {
+  font-family: var(--heading-font);
+  font-size: var(--post-title-font-size);
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.single-post .post-featured-image {
+  margin: 0 0 2rem;
+}
+
+.single-post .post-featured-image img {
+  width: 100%;
+  max-height: none;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.single-post .post-content {
+  max-width: none;
+  width: 100%;
+  margin: 0 0 2rem;
+  font-size: var(--body-font-size);
+  line-height: 1.85;
+}
+
+.single-post .post-content img {
+  width: 100%;
+  margin: 1.75rem 0;
+}
+
+.single-post .post-content p {
+  margin: 0 0 1.25rem;
+}
+
+.single-post .affiliate-disclosure {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.single-post .related-posts {
+  max-width: 67.5rem;
+}
+
+@media (max-width: 47.99em) {
+  .single-post .top-bar-inner {
+    align-items: flex-start;
+  }
+
+  .single-post .site-nav a {
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+  }
+
+  .single-post .site-logo-text {
+    display: none;
+  }
+
+  .single-post #header {
+    padding: 0;
+  }
+
+  .single-post #header:has(img) {
+    padding: 1rem 0 1.5rem;
+  }
+
+  .single-post .post-content {
+    font-size: 1.0625rem;
+  }
+
+
+}
+
+@media (max-width: 72em) {
+  .home .top-bar-inner {
+    padding: 1.25rem;
+    gap: 0;
+  }
 }

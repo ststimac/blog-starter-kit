@@ -1,12 +1,14 @@
 {
-  "title": "Daily Edit",
-  "description": "Outfit inspiration, fashion finds, and personal style.",
-  "tagline": "Style & Outfit Inspiration",
-  "url": "https://example.com",
+  "title": "Your Blog Name",
+  "description": "A short description of your style blog — used in search results and social previews.",
+  "tagline": "Your tagline goes here",
+  "url": "https://yoursite.netlify.app",
+  "logo": "",
+  "placeholderImage": "https://images.unsplash.com/photo-1483985988354-763728e3195b?w=1200&h=800&fit=crop",
   "author": {
     "name": "Your Name",
-    "bio": "Fashion enthusiast sharing daily outfits, seasonal edits, and shoppable style inspiration.",
-    "image": "/assets/images/author.jpg"
+    "bio": "Replace this with a short bio about yourself. Edit this file at src/_data/site.json.",
+    "image": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=240&h=240&fit=crop"
   },
   "navigation": [
     { "label": "Home", "url": "/" },
@@ -15,15 +17,32 @@
     { "label": "About", "url": "/about/" }
   ],
   "social": [
-    { "label": "Instagram", "url": "https://instagram.com/" },
-    { "label": "Pinterest", "url": "https://pinterest.com/" },
-    { "label": "LTK", "url": "https://shopltk.com/" }
+    { "label": "Instagram", "url": "https://instagram.com/your-handle" },
+    { "label": "Pinterest", "url": "https://pinterest.com/your-handle" },
+    { "label": "LTK", "url": "https://shopltk.com/your-handle" }
   ],
-  "affiliateDisclosure": "This site uses affiliate links. I may earn a commission when you shop through my links at no extra cost to you.",
+  "affiliateDisclosure": "Optional: add your affiliate disclosure here, or remove this field.",
+  "promoBoxes": [
+    {
+      "title": "About",
+      "url": "/about/",
+      "image": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=800&h=500&fit=crop"
+    },
+    {
+      "title": "Outfits",
+      "url": "/categories/outfits/",
+      "image": "https://images.unsplash.com/photo-1483985988354-763728e3195b?w=800&h=500&fit=crop"
+    },
+    {
+      "title": "Shopping",
+      "url": "/categories/shopping/",
+      "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=500&fit=crop"
+    }
+  ],
   "footerWidgets": [
     {
       "title": "Shop My Favorites",
-      "content": "<p><a href=\"#\">Amazon Storefront</a><br><a href=\"#\">LTK Shop</a></p>"
+      "content": "<p><a href=\"#\">Replace with your Amazon Storefront</a><br><a href=\"#\">Replace with your LTK Shop</a></p>"
     },
     {
       "title": "Categories",

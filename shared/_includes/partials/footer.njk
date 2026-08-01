@@ -1,16 +1,50 @@
-{% if site.footerWidgets %}
 <section id="footer-widgets">
-  {% for widget in site.footerWidgets %}
-  <div class="footer-widget">
-    <h2>{{ widget.title }}</h2>
-    <div>{{ widget.content | safe }}</div>
+  <div class="footer-widgets-inner">
+    {% if site.author %}
+    <div class="footer-widget footer-about">
+      <h2>About</h2>
+      {% if site.author.image %}
+      <img src="{{ site.author.image }}" alt="{{ site.author.name }}" class="footer-author-image">
+      {% endif %}
+      <p class="footer-author-name">{{ site.author.name }}</p>
+      <p>{{ site.author.bio }}</p>
+      <p><a href="/about/">Read more →</a></p>
+    </div>
+    {% endif %}
+
+    {% if site.newsletter %}
+    <div class="footer-widget footer-newsletter">
+      <h2>{{ site.newsletter.title or "Subscribe" }}</h2>
+      <p>{{ site.newsletter.description }}</p>
+      <form name="newsletter" method="POST" data-netlify="true" class="footer-newsletter-form">
+        <input type="hidden" name="form-name" value="newsletter">
+        <label for="footer-email" class="sr-only">Email address</label>
+        <input type="email" id="footer-email" name="email" placeholder="Your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+    {% endif %}
+
+    {% if site.footerWidgets %}
+    {% for widget in site.footerWidgets %}
+    <div class="footer-widget">
+      <h2>{{ widget.title }}</h2>
+      <div>{{ widget.content | safe }}</div>
+    </div>
+    {% endfor %}
+    {% endif %}
   </div>
-  {% endfor %}
 </section>
-{% endif %}
 
 <footer id="footer">
-  <p>&copy; {{ meta.buildTime | readableDate }} {{ site.title }}. All rights reserved.</p>
+  {% if site.navigation %}
+  <nav class="footer-nav" aria-label="Footer">
+    {% for item in site.navigation %}
+    <a href="{{ item.url }}">{{ item.label }}</a>
+    {% endfor %}
+  </nav>
+  {% endif %}
+  <p>&copy; {{ "" | currentYear }} {{ site.title }}. All rights reserved.</p>
   {% if site.affiliateDisclosure %}
   <p class="footer-disclosure">{{ site.affiliateDisclosure }}</p>
   {% endif %}

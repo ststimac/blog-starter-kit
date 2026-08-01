@@ -3,7 +3,7 @@ layout: layouts/base.njk
 bodyClass: single-post
 ---
 <div class="container">
-  <article>
+  <article class="post-article">
     <header class="post-header">
       <div class="post-meta">
         <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
@@ -14,9 +14,10 @@ bodyClass: single-post
       <h1>{{ title }}</h1>
     </header>
 
-    {% if image %}
+    {% set postImage = image or images.defaultPost %}
+    {% if postImage %}
     <figure class="post-featured-image">
-      <img src="{{ image }}" alt="{{ imageAlt or title }}" loading="lazy">
+      <img src="{{ postImage }}" alt="{{ imageAlt or title }}" loading="lazy">
     </figure>
     {% endif %}
 
@@ -38,4 +39,19 @@ bodyClass: single-post
     </aside>
     {% endif %}
   </article>
+
+  {% set relatedPosts = collections.posts | excludeUrl(page.url) | head(3) %}
+  {% if relatedPosts.length > 0 %}
+  <section class="related-posts" aria-labelledby="related-posts-title">
+    <h2 id="related-posts-title">You Might Also Like</h2>
+    <div class="related-posts-grid">
+      {% for post in relatedPosts %}
+      <a href="{{ post.url }}" class="related-post-card">
+        <img src="{{ post.data.image or images.defaultPost }}" alt="{{ post.data.imageAlt or post.data.title }}" loading="lazy">
+        <span>{{ post.data.title }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
 </div>

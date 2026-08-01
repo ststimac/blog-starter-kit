@@ -1,0 +1,9 @@
+{
+  "defaultPost": "https://images.unsplash.com/photo-1483985988354-763728e3195b?w=1200&h=800&fit=crop",
+  "placeholders": {
+    "outfits": "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=1200&h=800&fit=crop",
+    "shopping": "https://images.unsplash.com/photo-1539533018447-63fcce267608?w=1200&h=800&fit=crop",
+    "accessories": "https://images.unsplash.com/photo-1548036328-c9fa89d12836?w=1200&h=800&fit=crop",
+    "fall": "https://images.unsplash.com/photo-1496747611176-843222e1ee57?w=1200&h=800&fit=crop"
+  }
+}

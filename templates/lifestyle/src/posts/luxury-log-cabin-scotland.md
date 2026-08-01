@@ -2,31 +2,28 @@
 layout: layouts/post.njk
 title: "A Summer Stay In a Luxury Log Cabin In Scotland"
 description: "About 45 minutes outside of Inverness, Scotland is a truly dreamy cabin escape from the hustle and bustle of life."
-date: 2022-09-15
+date: 2022-09-16
 categories:
   - travel
-  - lifestyle
+  - Luxe Cabins
+  - United Kingdom
 tags:
   - travel
   - scotland
 featured: true
-image: https://images.unsplash.com/photo-1449158743715-0cb90f3871a2?w=1200&h=800&fit=crop
-imageAlt: Luxury log cabin in the Scottish Highlands
+image: /assets/images/featured-travel-story.jpg
+imageAlt: Luxury log cabin stay in Scotland
 permalink: /posts/luxury-log-cabin-scotland/
 ---
 
-About 45 minutes outside of Inverness, Scotland is a truly dreamy cabin escape from the hustle and bustle of life. Think floor-to-ceiling windows, a wood-burning stove, and views that stretch for miles across the Highlands.
+Replace this text with your post introduction. Add a personal story, a useful guide, or whatever fits your blog.
 
-## Getting There
+## Add Your First Section
 
-We flew into Inverness and rented a car for the drive north. The journey itself is half the adventure — winding roads, sheep crossings, and the occasional castle ruin.
+Use headings to structure your post and make it easy to scan.
 
-## The Cabin
+> Add a memorable quote, tip, or takeaway here.
 
-The cabin had everything we needed: a fully stocked kitchen, cozy blankets, and a hot tub on the deck overlooking the glen.
+## Add Another Section
 
-> Sometimes the best travel isn't about seeing everything — it's about finding one perfect place and staying awhile.
-
-## What We'd Do Differently
-
-Pack more layers! Even in summer, Scottish evenings get chilly. And book the hot tub slot early — it's popular.
+Continue writing your story in Markdown. Delete this placeholder content when you're ready to publish.

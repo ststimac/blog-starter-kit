@@ -18,10 +18,12 @@ These are generic starter kits — not a live site. For a real-world example bui
 git clone <your-repo-url>
 cd blog-starter-kit
 npm install
-npm run dev:lifestyle
+npm run dev:lifestyle   # http://localhost:8080
+npm run dev:food        # http://localhost:8081
+npm run dev:style       # http://localhost:8082
 ```
 
-Open [http://localhost:8080](http://localhost:8080).
+Open the URL for the template you’re previewing.
 
 ## Deploy to Netlify
 

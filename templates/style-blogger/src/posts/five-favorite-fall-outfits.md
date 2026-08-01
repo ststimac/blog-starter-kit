@@ -1,24 +1,19 @@
 ---
 layout: layouts/post.njk
-title: "5 Favorite Fall Outfits"
-description: "Boots, sweaters, and warm tones — my favorite season to get dressed for."
-date: 2023-10-15
+title: "Your Style Roundup"
+description: "Replace this with a short description for your homepage and RSS feed."
+date: 2024-01-03
 categories:
-  - outfits
+  - shopping
 tags:
-  - fall
-  - outfits
+  - shopping
 image: https://images.unsplash.com/photo-1496747611176-843222e1ee57?w=1200&h=800&fit=crop
-imageAlt: Fall outfit inspiration
-permalink: /posts/five-favorite-fall-outfits/
+imageAlt: Placeholder style image from Unsplash
+permalink: /posts/your-style-roundup/
 ---
 
-Autumn is my favorite season to get dressed. Boots, layers, and warm tones — here's what's on rotation.
+Replace this text with your shopping list, wardrobe edit, or favorite finds.
 
-1. **Turtleneck + blazer + wide-leg trousers**
-2. **Midi skirt + ankle boots + oversized knit**
-3. **Cutout sweater dress + knee-high boots**
-4. **Camel coat + all-black underneath**
-5. **Plaid shirt tied at the waist + denim**
-
-Each outfit works for day-to-night with a shoe swap.
+1. Replace with your first recommendation.
+2. Replace with your second recommendation.
+3. Replace with your third recommendation.

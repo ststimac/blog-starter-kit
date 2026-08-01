@@ -1,13 +1,14 @@
 {
-  "title": "Wander & Warmth",
-  "description": "A lifestyle blog about travel, style, home, and seasonal living.",
-  "tagline": "Travel & Lifestyle Blog",
-  "url": "https://example.com",
+  "title": "Your Blog Name",
+  "description": "A short description of your blog — used in search results and social previews.",
+  "tagline": "Your tagline goes here",
+  "url": "https://yoursite.netlify.app",
   "logo": "",
+  "placeholderImage": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=800&fit=crop",
   "author": {
-    "name": "Alex",
-    "bio": "Writer, traveler, and homebody. Sharing stories about the places I go and the life I build at home.",
-    "image": "/assets/images/author.jpg"
+    "name": "Your Name",
+    "bio": "Replace this with a short bio about yourself. Edit this file at src/_data/site.json.",
+    "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=240&h=240&fit=crop"
   },
   "navigation": [
     { "label": "Home", "url": "/" },
@@ -17,19 +18,61 @@
     { "label": "About", "url": "/about/" }
   ],
   "social": [
-    { "label": "Instagram", "url": "https://instagram.com/" },
-    { "label": "Pinterest", "url": "https://pinterest.com/" },
-    { "label": "Twitter", "url": "https://twitter.com/" }
+    { "label": "Instagram", "url": "https://instagram.com/your-handle" },
+    { "label": "Pinterest", "url": "https://pinterest.com/your-handle" },
+    { "label": "Twitter", "url": "https://twitter.com/your-handle" }
   ],
   "newsletter": {
     "title": "Subscribe",
-    "description": "Get new posts delivered to your inbox."
+    "description": "Replace with your newsletter pitch — e.g. “Get new posts in your inbox.”"
   },
-  "affiliateDisclosure": "This site participates in affiliate programs. If you click a link and make a purchase, I may earn a commission at no extra cost to you.",
+  "homeShop": {
+    "title": "New Arrivals",
+    "items": [
+      {
+        "name": "Placeholder product one",
+        "url": "https://example.com",
+        "image": "https://images.unsplash.com/photo-1539533018447-63fcce267608?w=160&h=160&fit=crop"
+      },
+      {
+        "name": "Placeholder product two",
+        "url": "https://example.com",
+        "image": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=160&h=160&fit=crop"
+      },
+      {
+        "name": "Placeholder product three",
+        "url": "https://example.com",
+        "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=160&h=160&fit=crop"
+      },
+      {
+        "name": "Placeholder product four",
+        "url": "https://example.com",
+        "image": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=160&h=160&fit=crop"
+      }
+    ]
+  },
+  "promoBoxes": [
+    {
+      "title": "About the Blog",
+      "url": "/about/",
+      "image": "/assets/images/about-the-blog.jpg"
+    },
+    {
+      "title": "Lifestyle",
+      "url": "/categories/lifestyle/",
+      "image": "/assets/images/lifestyle-promo.jpg"
+    },
+    {
+      "title": "Style",
+      "url": "/categories/style/",
+      "image": "/assets/images/style-promo.jpg"
+    }
+  ],
+  "affiliateDisclosure": "Optional: add your affiliate disclosure here, or remove this field.",
   "footerWidgets": [
     {
       "title": "About the Blog",
-      "content": "<p>A lifestyle blog about travel, style, and making home feel cozy.</p>"
+      "content": "<p>Replace with a short blurb about your blog. Edit src/_data/site.json.</p>"
     },
     {
       "title": "Categories",

@@ -1,0 +1,9 @@
+{
+  "defaultPost": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=800&fit=crop",
+  "placeholders": {
+    "travel": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&h=800&fit=crop",
+    "style": "https://images.unsplash.com/photo-1496747611176-843222e1ee57?w=1200&h=800&fit=crop",
+    "home": "https://images.unsplash.com/photo-1513694203231-719280a1742f?w=1200&h=800&fit=crop",
+    "garden": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&h=800&fit=crop"
+  }
+}

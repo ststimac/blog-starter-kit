@@ -1,4 +1,12 @@
 ---
-layout: layouts/home.njk
-title: Home
+layout: layouts/base.njk
+bodyClass: home
+pagination:
+  data: collections.posts
+  size: 2
+  alias: posts
+permalink: "{% if pagination.pageNumber %}page/{{ pagination.pageNumber + 1 }}/{% else %}/{% endif %}"
+eleventyComputed:
+  title: "{% if pagination.pageNumber %}Page {{ pagination.pageNumber + 1 }}{% else %}Home{% endif %}"
 ---
+{% include "partials/home-content.njk" %}

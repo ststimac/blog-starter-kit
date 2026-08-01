@@ -1,18 +1,33 @@
-/* Food blogger theme — warm earth tones */
+/*
+  Food blogger theme colors.
+  Change these values to customize this template.
+  Anything not listed here inherits from shared/assets/css/base.css.
+*/
 
 :root {
-  --color-cream: #f5f0e8;
-  --color-cream-dark: #e8ddd0;
-  --color-accent: #8b5a2b;
-  --color-text: #3d3229;
-  --color-footer: #2c241c;
-  --font-heading: "Lora", Georgia, serif;
+  /* Main brand color — links, buttons, recipe accents */
+  --main-color: #8b5a2b;
+
+  /* Soft background — top nav, footer band, widgets */
+  --soft-background: #f5f0e8;
+
+  /* Soft border — dividers and subtle borders */
+  --soft-border-color: #e8ddd0;
+
+  /* Text color — body copy and headings */
+  --text-color: #3d3229;
+
+  /* Footer bar — dark bottom bar */
+  --footer-bar-color: #2c241c;
+
+  /* Heading font — post titles and section headings */
+  --heading-font: "Lora", Georgia, serif;
 }
 
 .post-card-body {
-  border-bottom-color: var(--color-cream-dark);
+  border-bottom-color: var(--soft-border-color);
 }
 
 .recipe-card {
-  border-left-color: var(--color-accent);
+  border-left-color: var(--main-color);
 }

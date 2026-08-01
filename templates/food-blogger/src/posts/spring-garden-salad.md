@@ -1,21 +1,23 @@
 ---
 layout: layouts/post.njk
-title: "Spring Garden Salad with Lemon Vinaigrette"
-description: "The first salad of the season, straight from the garden."
-date: 2024-04-20
+title: "Your Seasonal Recipe"
+description: "Replace this with a short description for your homepage and RSS feed."
+date: 2024-01-03
 categories:
-  - recipes
   - seasonal
 tags:
-  - salad
-  - spring
+  - seasonal
 image: https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=1200&h=800&fit=crop
-imageAlt: Fresh garden salad in a bowl
-permalink: /posts/spring-garden-salad/
+imageAlt: Placeholder seasonal food image from Unsplash
+permalink: /posts/your-seasonal-recipe/
 ---
 
-The first harvest of spring — tender lettuce, radishes, pea shoots, and herbs — needs nothing more than a bright lemon vinaigrette.
+Replace this text with a seasonal recipe, ingredient guide, or kitchen story.
 
-## Lemon Vinaigrette
+## Your Ingredients
 
-Whisk together 3 tbsp olive oil, 1 tbsp lemon juice, 1 tsp honey, and a pinch of salt. Toss with greens immediately before serving.
+List the seasonal ingredients or key details here.
+
+## Your Method
+
+Explain how readers can make this recipe their own.
